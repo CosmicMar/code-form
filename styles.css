@@ -83,6 +83,18 @@ form {
   text-wrap: nowrap;
 }
 
+a {
+  text-decoration: none;
+  color: #6f9156;
+}
+
+button {
+  margin-bottom: 1.5em;
+  background-color: var(--content-overlay);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
 #title {
   margin-bottom: -5px;
   display: inline-block;
@@ -163,7 +175,7 @@ input[type="submit"]:hover {
     font-size: .7em;
   }
 
-  input, textarea,{
+  input, textarea {
     font-size: 1em;
   }
 
