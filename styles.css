@@ -43,7 +43,6 @@ body {
   background-color: var(--background);
   color: var(--text);
   font-family: "Fira-Code", monospace;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
