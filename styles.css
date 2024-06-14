@@ -1,0 +1,155 @@
+:root {
+  --tags: #d85c50;
+  --attribute: #d18b49;
+  --value: #98c379;
+  --content-overlay: #2033449e;
+  --border: #63666D;
+  --text: #abb2bf;
+  --background: #15222e;
+}
+
+.tag {
+  color: var(--tags);
+  font-style: normal;
+}
+
+.attribute {
+  color: var(--attribute);
+}
+
+.value {
+  color: var(--value);
+}
+
+.container {
+  text-align: center;
+}
+
+.wrapper {
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+.indent {
+  padding-left: 10px;
+  border-left: 1px solid var(--border);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Fira-Code", monospace;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+fieldset {
+  border: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0px;
+  clear: both;
+}
+
+li {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+form p {
+  margin: 0;
+  font-style: italic;
+}
+
+label {
+  display: block;
+  margin: 0;
+}
+
+form {
+  width: 70vw;
+  max-width: 540px;
+  min-width: 495px;
+  height: 70.5%;
+  margin: 0 auto;
+  line-height: 2;
+  background-color: var(--content-overlay);
+  border-left: 1px solid var(--border);
+  text-wrap: nowrap;
+}
+
+#title {
+  margin-bottom: -5px;
+}
+
+#form-title {
+  margin: 0;
+  padding-top: 2px;
+  line-height: normal;
+}
+
+textarea {
+  margin-bottom: -10px;
+  padding: 2px;
+  color: white;
+}
+
+input,
+textarea {
+  background-color: #203446;
+  border: none;
+  filter: drop-shadow(1px 1px 2px var(--background));
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: smaller;
+  padding: 2px;
+  text-align: center;
+  color: #687178;
+}
+
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999%;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin-left: -8px;
+  padding: 0px 2px;
+  cursor: pointer;
+  font-size: small;
+  filter: drop-shadow(1px 1px 2px var(--background));
+  background-color: #203446;
+  color: #687178;
+}
+
+input[type="checkbox"]:checked + label {
+  color: white;
+  filter: drop-shadow(0px 0px 2px #34556F);
+}
+
+input[type="submit"] {
+  box-sizing: content-box;
+  width: 100%;
+  height: 2.2rem;
+  padding: 0;
+  margin: 0;
+  color: var(--text);
+  font-size: medium;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 2px #34556F);
+}
